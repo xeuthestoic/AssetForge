@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>AssetForge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🔥 AssetForge</h1>
+
+  <div class="container">
+
+    <!-- CONTROLS -->
+    <div class="controls">
+      <label>Couleur fond</label>
+      <input type="color" id="bgColor" value="#1a1a1a">
+
+      <label>Couleur bordure</label>
+      <input type="color" id="borderColor" value="#6b00ff">
+
+      <label>Glow</label>
+      <input type="range" id="glow" min="0" max="50" value="20">
+
+      <button id="generate">Générer</button>
+      <button id="download">Télécharger</button>
+    </div>
+
+    <!-- PREVIEW -->
+    <canvas id="canvas" width="512" height="512"></canvas>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
